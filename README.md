@@ -40,8 +40,9 @@ Your goal this week is to go through these high-quality tutorials. You don't nee
     *   **Resource:** Pyplot Tutorial ([matplotlib.org](https://matplotlib.org/stable/tutorials/pyplot.html))
     *   **Focus on:** How to make a simple `plt.plot()` and `plt.scatter()`. We only need the very basics for now.
 
-#### **Part 3: Week 1 Assignment - The Vectorization Challenge**
-
+#### **Part 3: Week 1 Assignment**
+The purpose of these assignments is to ensure a working, practical knowledge of Python and NumPy. We won't be going too deep into either for our purposes.
+##### **Assignment 1.1: The power of Vectorisation**
 This assignment is designed to give you a hands-on feel for the power of NumPy and to be your first deliverable for the project. Create a new Jupyter Notebook and follow the steps below.
 
 **Objective:** Compare the speed of a standard Python `for` loop versus a vectorized NumPy operation for a common mathematical task.
@@ -55,7 +56,7 @@ This assignment is designed to give you a hands-on feel for the power of NumPy a
     *   Use the `%timeit` magic command in Jupyter to measure how long this function takes to run.
 
 3.  **Method 2: Vectorized NumPy:**
-    *   Write a single line of code that calculates the same MSE using only NumPy operations (hint: subtraction and `np.mean()`).
+    *   Write a single line of code that calculates the same MSE using only NumPy operations.
     *   Use the `%timeit` magic command to measure the execution time of this vectorized version.
 
 4.  **Analysis:**
@@ -63,8 +64,20 @@ This assignment is designed to give you a hands-on feel for the power of NumPy a
         *   "What was the speed difference you observed?"
         *   "Why do you think the NumPy version is so much faster?"
 
-#### **Part 4: Submission**
+##### **Assignment 1.2: The Card Deck** 
+This assignment aims to give build the core infrastructure for the final project(winning BlackJack of course!)
+1.   **Task:** Create a function `generate_deck()` that returns a list/array representing a standard 52-card deck.
+    *   Represent cards as values: Number cards are their value, Face cards (J, Q, K) are 10, Ace is 11 (don't worry about the soft Ace 1/11 logic yet).
+2.   **Task:** Create a function `draw_card(deck)` that removes a random card from the deck and returns it.
+2.   **Sanity Check:** If I call `draw_card` 53 times, the code should raise an error or handle the empty deck.
 
-Please submit your completed your python code by the end of the week. This will confirm you have your environment set up and are comfortable with the basics.
+##### **Assignment 1.3: The Weighted Die (Probability Basics)**
+*   **Task:** Simulate a "loaded" die where the number **6** has a 50% chance of appearing, and 1-5 have a 10% chance each.
+*   **Requirement:** Simulate 10,000 rolls using `np.random.choice` with the `p` (probability) parameter.
+*   **Deliverable:** A histogram (using `matplotlib`) showing the frequency of each number.
 
-Good luck, and don't hesitate to ask questions
+#### **Part 3: Submission**
+
+Please submit your completed your python code by the end of the week. This will confirm you have your environment set up and are comfortable with the basics. After the deadline gets over, the solutions for the same will be uploaded here.
+
+Good luck, and don't hesitate to ask questions!
