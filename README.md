@@ -11,18 +11,19 @@ Our project is a structured journey designed to take you from a programming novi
 *   **Week 1: The Toolbox:** Master the essential toolkit of Python and NumPy.
 *   **Week 2: Monte Carlo Estimation:** Use simulation to estimate the area of complex shapes and build intuition.
 *   **Week 3: RL Theory:** Learn the foundational concepts of agents, policies, and value functions.
-*   **Week 4: Monte Carlo Prediction:** Build an engine to evaluate any strategy for the game of Blackjack.
-*   **Week 5: Monte Carlo Control:** Empower an agent to learn the optimal strategy for Blackjack entirely on its own.
+*   **Week 4: Monte Carlo Prediction and Control:** Build an engine to evaluate any strategy for the game of Blackjack. Then we empower an agent to learn the optimal strategy for Blackjack entirely on its own. 
+* **Week 5: The Optimising Agent**: Use techniques like off-policy MC, importance sampling, and hyper-parameter tuning to converge faster to the optimal strategy.
 
+#### **NOTE:** The assignments and learning resources several optional sections. You are free to skip them because of time constraints. However, we recommend to try them out since they would help you gain a better understanding of RL. 
 ---
 
 ### **Week 1: The Toolbox - Python & NumPy Fundamentals**
 
-**Objective:** By the end of this week, you will be comfortable with the basics of the Python language and the NumPy library. You will be able to write vectorized code to perform fast numerical operations and create simple visualizations.
+**Objective:** By the end of this week, you will be comfortable with the basics of the Python language and the NumPy library. You will be able to write vectorized code to perform fast numerical operations and create simple visualizations. You'll also have a strong foundation in Probability and Statistics.
 
 #### **Part 1: Learning Resources**
 
-This is mainly for those new to Python and Numpy. For those who are familiar, you may directly skip to the assignment, since it will be used later. Your goal this week is to go through these high-quality tutorials. You don't need to memorize everything, but focus on understanding the core concepts. We'll also provide a tutorial on git, which will be (forever) useful for version control.
+This is mainly for those new to Python, Numpy and Probability. For those who are familiar, you may directly skip to the assignment, since it will be used later. Your goal this week is to go through these high-quality tutorials. You don't need to memorize everything, but focus on understanding the core concepts. 
 
 *   **Python Basics (for those: new to the language):**
     * **Tutorial:** ([FreeCodeCamp Tutorial video](https://www.youtube.com/watch?v=eWRfhZUzrAc))
@@ -41,12 +42,12 @@ This is mainly for those new to Python and Numpy. For those who are familiar, yo
     *   **Focus on:** How to make a simple `plt.plot()` and `plt.scatter()`. We only need the very basics for now.
 
 * **Probability and Statistics** -  A strong foundation in Probability is essential for RL.
-    * **Visuals: ** ([Seeing Theory: Brown University])(https://seeing-theory.brown.edu/)
-    * **Lecture Slides: ** Check out the following slides from Prof. Rajwade for CS215
-        * ([Random Variables](https://docs.google.com/presentation/d/1sI-8arcM2yYnNZ4sHUWIWfBFTLbc-Bpe/edit). 
-        * **Focus on: ** Understanding Random Variables, CDF, PDF, LOTUS, Independence, Law of Large Numbers
-        * **Ignore for now: ** Moment Generating Functions(MGFs), Chebyshev's inquality, Markov inequality, covariance
-    * **Optional: ** Read about the Cental Limit Theorem. 3Blue1Brown's video is an excellent starting point.
+    * **Visuals:** [Seeing Theory: Brown University](https://seeing-theory.brown.edu/)
+    * **Lecture Slides:** Check out the following slides from Prof. Rajwade for CS215
+        * [Random Variables](https://docs.google.com/presentation/d/1sI-8arcM2yYnNZ4sHUWIWfBFTLbc-Bpe/edit). 
+        * **Focus on:** Understanding Random Variables, CDF, PDF, LOTUS, Independence, Law of Large Numbers
+        * **Ignore for now:** Moment Generating Functions(MGFs), Chebyshev's inquality, Markov inequality, covariance
+    * **Optional:** Read about the Cental Limit Theorem. 3Blue1Brown's video is an excellent starting point.
 
 #### **Part 2: Assignments**
 Assignments have been uploaded in the week 1 directory of this repository. The purpose of these assignments is to ensure a working, practical knowledge of Python and Numpy. For week 1, we'll build games in Python! These same games will be used later on when we train our models to play them. We'll also get started with NumPy and see how vectorization can improve our code speed. 
@@ -104,3 +105,32 @@ This week's assignment consists of a theoretical problem sheet. It has been uplo
 Please submit your answers in pdf format. Both handwritten(provided they are legible) and LaTeX solutions are accepted. A google form will be released for the same. After the deadline gets over, the solutions will be uploaded in the week 3 directory of this repository.
 
 
+### **Week 4: Monte Carlo Methods (Prediction & Control)**
+**Goal:** Move from "Running a simulation" to "Learning from it". Understand how to update the Value Function $V(s)$ and Policy $\pi(s)$ based on episodes.
+
+#### **Part 1: Learning Resources**
+* **Video Lectures:** David Silver - Lecture 4: Model-Free Prediction & Lecture 5: Model-Free Control
+  * Note: He also covers Temporal Diference Learning methods such as SARSA and Q-Learning in these lectures. You may freely skip over those sections since they are not needed for our purposes. 
+* **Textbook Reading:** Sutton & Barto, Chapter 5 (Monte Carlo Methods)
+    *   **Sections 5.1 - 5.4:** This covers First-visit MC, MC Estimation of Action Values, and MC Control.
+    
+#### **Part 2: Assignment** 
+Uploaded in the week4 directory of this repo. Note that if you were not able to build a correct game in week 1, you are free to use OpenAI Gymnasium environments. However, we highly recommend to debug your own code and use that, since the topics covered in the next week are optional.
+
+#### Part 3: Submission
+The submission form will be released *after* completion of week 5. Week 5 is optional and you may continue to work on week 4 assignment if you wish. 
+
+### **Week 5: The Optimising Agent (Off-Policy & Tuning)**
+**Goal:** The agent plays 500,000 games. It starts dumb, explores random moves, and eventually converges to the mathematically optimal "Basic Strategy" chart.
+
+#### **Part 1: Learning resources**
+*   **Topic:** **Off-Policy Learning via Importance Sampling**.
+*   **The Problem:** How do you learn the *Optimal* Strategy (Greedy) while following an *Exploratory* Strategy (Random)?
+*   **Sutton & Barto:** Sections 5.5  - 5.7. 
+
+#### Part 2: Assignment
+**NOTE:** You should **only** attempt this if you have **completed** the previous implementation of MC control. If not, this week acts as a buffer week where you can catch-up any remaining topics.
+
+The assignment is to apply Importance sampling to your existing agent. A small suggestion: weighted importance sampling is usually preferred over ordinary in implementation because of bounded variance. Since this is a continuation of the previous assignment, there is no separate document.You should upload the final version with importance sampling for the week 5 google form.
+#### Part 3: Submission
+The submission form will be released at end of week 5. We will also give 3 days buffer time for submission. Note that along with the Week 4 - Week 5 code, you also have to submit a report consisting of whatever you have learned throughout this WiDS. For the final week, include a "Learning curve" plot (episodes in X axis vs average reward on Y-axis) Any additional insights are welcome!  
