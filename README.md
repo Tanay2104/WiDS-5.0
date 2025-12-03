@@ -22,7 +22,7 @@ Our project is a structured journey designed to take you from a programming novi
 
 #### **Part 1: Learning Resources**
 
-Your goal this week is to go through these high-quality tutorials. You don't need to memorize everything, but focus on understanding the core concepts. We'll also provide a tutorial on git, which will be (forever) useful for version control.
+This is mainly for those new to Python and Numpy. For those who are familiar, you may directly skip to the assignment, since it will be used later. Your goal this week is to go through these high-quality tutorials. You don't need to memorize everything, but focus on understanding the core concepts. We'll also provide a tutorial on git, which will be (forever) useful for version control.
 
 *   **Python Basics (for those: new to the language):**
     * **Tutorial:** ([FreeCodeCamp Tutorial video](https://www.youtube.com/watch?v=eWRfhZUzrAc))
@@ -34,11 +34,19 @@ Your goal this week is to go through these high-quality tutorials. You don't nee
     * **Tutorial** ([FreeCodeCamp Tutorial Video](https://www.youtube.com/watch?v=QUT1VHiLmmI&pp=ygUgbnVtcHkgdHV0b3JpYWwgZm9yIGJlZ2lubmVycyBmY2M%3D))
     *   **Resource:** NumPy: The absolute basics for beginners ([numpy.org](https://numpy.org/doc/stable/user/absolute_beginners.html))
     *   **Focus on:** What is a NumPy array? How do you create arrays? What is array indexing, slicing, and, most importantly, **vectorization**? This concept is the key to writing fast, modern data science code.
-
+    * For those who are already proficient in NumPy, look up advanced features like universal functions, Numpy strides, and array siblings.
 *   **Matplotlib - Our Visualization Tool:**
     * **Tutorial** ([FreeCodeCamp Tutorial Video](https://www.youtube.com/watch?v=3Xc3CA655Y4))
     *   **Resource:** Pyplot Tutorial ([matplotlib.org](https://matplotlib.org/stable/tutorials/pyplot.html))
     *   **Focus on:** How to make a simple `plt.plot()` and `plt.scatter()`. We only need the very basics for now.
+
+* **Probability and Statistics** -  A strong foundation in Probability is essential for RL.
+    * **Visuals: ** ([Seeing Theory: Brown University])(https://seeing-theory.brown.edu/)
+    * **Lecture Slides: ** Check out the following slides from Prof. Rajwade for CS215
+        * ([Random Variables](https://docs.google.com/presentation/d/1sI-8arcM2yYnNZ4sHUWIWfBFTLbc-Bpe/edit). 
+        * **Focus on: ** Understanding Random Variables, CDF, PDF, LOTUS, Independence, Law of Large Numbers
+        * **Ignore for now: ** Moment Generating Functions(MGFs), Chebyshev's inquality, Markov inequality, covariance
+    * **Optional: ** Read about the Cental Limit Theorem. 3Blue1Brown's video is an excellent starting point.
 
 #### **Part 2: Assignments**
 Assignments have been uploaded in the week 1 directory of this repository. The purpose of these assignments is to ensure a working, practical knowledge of Python and Numpy. For week 1, we'll build games in Python! These same games will be used later on when we train our models to play them. We'll also get started with NumPy and see how vectorization can improve our code speed. 
