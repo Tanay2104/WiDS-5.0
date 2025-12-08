@@ -6,7 +6,7 @@ Welcome, everyone! This document will serve as our central hub for the project. 
 
 #### **The 5-Week Journey**
 
-Our project is a structured journey designed to take you from a programming novice to the architect of a simple artificial intelligence.
+Our project is a structured journey designed to take you from a beginner in to the architect of a simple artificial intelligence.
 
 *   **Week 1: The Toolbox:** Master the essential toolkit of Python and NumPy.
 *   **Week 2: Monte Carlo Estimation:** Use simulation to estimate the area of complex shapes and build intuition.
