@@ -6,7 +6,7 @@ Welcome, everyone! This document will serve as our central hub for the project. 
 
 #### **The 5-Week Journey**
 
-Our project is a structured journey designed to take you from a beginner in to the architect of a simple artificial intelligence.
+Our project is a structured journey designed to take you from a beginner to the architect of a simple artificial intelligence.
 
 *   **Week 1: The Toolbox:** Master the essential toolkit of Python and NumPy.
 *   **Week 2: Monte Carlo Estimation:** Use simulation to estimate the area of complex shapes and build intuition.
@@ -14,7 +14,7 @@ Our project is a structured journey designed to take you from a beginner in to t
 *   **Week 4: Monte Carlo Prediction and Control:** Build an engine to evaluate any strategy for the game of Blackjack. Then we empower an agent to learn the optimal strategy for Blackjack entirely on its own. 
 * **Week 5: The Optimising Agent**: Use techniques like off-policy MC, importance sampling, and hyper-parameter tuning to converge faster to the optimal strategy.
 
-#### **NOTE:** The assignments and learning resources contain several optional sections. You are free to skip them because of time constraints. However, we recommend to try them out since they would help you gain a better understanding of RL. 
+#### **NOTE:** The assignments and learning resources contain several optional sections. You are free to skip them because of time constraints. However, we recommend to try them out since they would help you gain a better understanding of Monte Carlo Methods, such as those used in RL.
 ---
 
 ### **Week 1: The Toolbox - Python & NumPy Fundamentals**
